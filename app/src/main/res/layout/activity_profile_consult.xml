@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary"
+    android:background="@color/SplachScreen"
     tools:context=".Profile_Consult">
 
  <LinearLayout
+     android:id="@+id/linearLayout"
      android:layout_width="match_parent"
      android:layout_height="25dp"
      android:background="@color/white"
@@ -17,37 +18,40 @@
       android:id="@+id/jam"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:src="@drawable/jam"
       android:padding="5dp"
+      android:src="@drawable/jam"
       tools:ignore="MissingConstraints" />
+
   <ImageView
       android:id="@+id/alaram"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:src="@drawable/alarmm"
       android:padding="5dp"
+      android:src="@drawable/alarmm"
       tools:ignore="MissingConstraints" />
+
   <ImageView
       android:id="@+id/bluetooth"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:src="@drawable/bluetoothh"
       android:padding="3dp"
+      android:src="@drawable/bluetoothh"
       tools:ignore="MissingConstraints" />
+
   <ImageView
       android:id="@+id/wifi"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:src="@drawable/wiifi"
       android:padding="3dp"
+      android:src="@drawable/wiifi"
       tools:ignore="MissingConstraints" />
 
   <ImageView
       android:id="@+id/signal"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:src="@drawable/sinyal"
       android:padding="3dp"
+      android:src="@drawable/sinyal"
       tools:ignore="MissingConstraints" />
 
   <ImageView
@@ -124,7 +128,4 @@
     app:layout_constraintVertical_bias="0.165"
     tools:ignore="MissingConstraints" />
     />
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
