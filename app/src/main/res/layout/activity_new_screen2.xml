@@ -113,7 +113,7 @@
         app:layout_constraintStart_toStartOf="parent"></ImageView>
 
     <Button
-        android:id="@+id/btn_lewati"
+        android:id="@+id/btn_lewati2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -124,7 +124,7 @@
     </Button>
 
     <Button
-        android:id="@+id/btn_next"
+        android:id="@+id/btn_next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
