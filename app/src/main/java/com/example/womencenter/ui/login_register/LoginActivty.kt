@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.womencenter.MainActivity
 import com.example.womencenter.R
 
 class LoginActivty : AppCompatActivity(), View.OnClickListener {
@@ -50,11 +51,14 @@ class LoginActivty : AppCompatActivity(), View.OnClickListener {
             R.id.btn_login -> {
                 /*val kiki = Intent(this@LoginActivty)
                 resultLauncher.launch(kiki)*/
+                val bb = Intent(this@LoginActivty, MainActivity::class.java)
+                resultLauncher.launch(bb)
             }
             R.id.textView3 -> {
-                val aa = Intent(this@LoginActivty, RegisterActivity::class.java)
-                resultLauncher.launch(aa)
+//                val aa = Intent(this@LoginActivty, RegisterActivity::class.java)
+//                resultLauncher.launch(aa)
             }
+
         }
     }
 }

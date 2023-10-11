@@ -1,12 +1,29 @@
 <resources>
     <string name="app_name">WomenCenter</string>
+    <string name="back_button">  </string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="psikolog1s">Putri Diana,S.Psi.,M.psi</string>
-    <string name="bidangpsikolog1">Psikolog Klinis Dewasa</string>
+    <string name="title_profiles">Profile</string>
+    <string name="laws1">Vera Septiani S.H.,LL.M</string>
+    <string name="job">Pengacara</string>
     <string name="rating1">4.7</string>
     <string name="harga1">Rp. 50.000</string>
     <string name="ahli">Bidang Keahlian</string>
-    <string name="spesialis">-Trauma \n -Takut \n -Stress \n -Depresi</string>
+    <string name="spesialis">Mampu menganalisa permasalahan hukum \n
+Trampil dalam membuat perjanjian \n
+Memahami secara kognitif aspek normatif bidang hukum \n
+Keterampilan mendengarkan \n
+Berpikir logis dan kritis \n
+Skill penelitian up to date</string>
+    <string name="awal1">Hai Apa Kabar?!</string>
+    <string name="awall1">Selamat datang di Women Center </string>
+    <string name="awal2">Menambah Wawasan dan Pengetahuan</string>
+    <string name="awall2">Di Women Center kita bisa menambah wawasan \n
+        dan pengetahuan kita lhoo</string>
+    <string name="awal3">Meningkatkan Kepedulian</string>
+    <string name="awall3">Pengetahuan yang baik dan cukup dapat meningkatkan kepedulian kita sebagai manusia wanita seutuhnya</string>
+    <string name="awal4">Love Ourselves!</string>
+    <string name="awall4">Sehingga kita semua siap mencintai diri kita sendiri, memulai hari dengan penuh percaya diri</string>
+
 </resources>
