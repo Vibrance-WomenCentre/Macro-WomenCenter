@@ -3,4 +3,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="psikolog1s">Putri Diana,S.Psi.,M.psi</string>
+    <string name="bidangpsikolog1">Psikolog Klinis Dewasa</string>
+    <string name="rating1">4.7</string>
+    <string name="harga1">Rp. 50.000</string>
+    <string name="ahli">Bidang Keahlian</string>
+    <string name="spesialis">-Trauma \n -Takut \n -Stress \n -Depresi</string>
 </resources>

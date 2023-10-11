@@ -22,7 +22,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HALOOO GESS"
+        android:text="HALOOO GESS. lanjutt"
         android:textStyle="bold"
         tools:ignore="MissingConstraints" />
 
