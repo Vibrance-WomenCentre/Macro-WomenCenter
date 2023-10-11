@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF7F2"
+    android:background="@color/primary"
     tools:context=".ui.login_register.LoginActivty">
 
     <TextView
