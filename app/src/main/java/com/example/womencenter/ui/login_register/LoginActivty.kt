@@ -55,10 +55,9 @@ class LoginActivty : AppCompatActivity(), View.OnClickListener {
                 resultLauncher.launch(bb)
             }
             R.id.textView3 -> {
-//                val aa = Intent(this@LoginActivty, RegisterActivity::class.java)
-//                resultLauncher.launch(aa)
+               val aa = Intent(this@LoginActivty, RegisterActivity::class.java)
+                resultLauncher.launch(aa)
             }
-
         }
     }
 }

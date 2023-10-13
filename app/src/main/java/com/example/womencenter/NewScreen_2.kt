@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.example.womencenter.ui.login_register.LoginActivty
 
 class NewScreen_2 : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,9 +23,11 @@ class NewScreen_2 : AppCompatActivity(), View.OnClickListener {
         when (L.id){
             R.id.btn_next2 -> {
                 val ab = Intent(this@NewScreen_2, NewScreen_3::class.java)
+                startActivity(ab)
             }
             R.id.btn_lewati2 -> {
-                val ba = Intent(this@NewScreen_2, NewUser::class.java)
+                val ba = Intent(this@NewScreen_2, LoginActivty::class.java)
+                startActivity(ba)
             }
         }
     }

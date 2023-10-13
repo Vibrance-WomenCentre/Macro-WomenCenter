@@ -23,9 +23,11 @@ class NewScreen_4 : AppCompatActivity(), View.OnClickListener {
         when (L.id){
             R.id.btn_next4 -> {
                 val ab = Intent(this@NewScreen_4, LoginActivty::class.java)
+                startActivity(ab)
             }
             R.id.btn_lewati4 -> {
-                val ba = Intent(this@NewScreen_4, NewScreen_3::class.java)
+                val ba = Intent(this@NewScreen_4, LoginActivty::class.java)
+                startActivity(ba)
             }
         }
     }

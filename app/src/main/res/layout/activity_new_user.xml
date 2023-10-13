@@ -5,60 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NewUser">
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/jam"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:src="@drawable/jam"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/alaram"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:src="@drawable/alarmm"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/bluetooth"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:src="@drawable/bluetoothh"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/wifi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:src="@drawable/wiifi"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/signal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:src="@drawable/sinyal"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/batt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:src="@drawable/batt"
-            tools:ignore="MissingConstraints" />
-    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -75,14 +21,16 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/nuntobold"
         android:text="@string/awal1"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.098"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="146dp">
+        tools:ignore="MissingConstraints">
 
     </TextView>
 
@@ -91,11 +39,14 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
         android:text="@string/awall1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="normal"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_screen"
         tools:ignore="MissingConstraints" />
 
     <ImageView

@@ -5,60 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NewUser">
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/jam"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:src="@drawable/jam"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/alaram"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:src="@drawable/alarmm"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/bluetooth"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:src="@drawable/bluetoothh"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/wifi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:src="@drawable/wiifi"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/signal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:src="@drawable/sinyal"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/batt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:src="@drawable/batt"
-            tools:ignore="MissingConstraints" />
-    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView2"
