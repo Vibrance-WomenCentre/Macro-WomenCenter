@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary"
+    android:background="#FFF7F2"
     tools:context=".Profile_Consult">
 
  <LinearLayout
@@ -206,4 +206,12 @@
      android:textSize="14sp"
      app:layout_constraintBottom_toBottomOf="parent"
      tools:layout_editor_absoluteX="16dp" />
+
+ <TextView
+     android:layout_width="118dp"
+     android:layout_height="39dp"
+     android:background="@drawable/rectangle1"
+     android:backgroundTint="@color/pink"
+     tools:layout_editor_absoluteX="11dp"
+     tools:layout_editor_absoluteY="535dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
