@@ -175,11 +175,12 @@
         android:id="@+id/textView12"
         android:layout_width="154dp"
         android:layout_height="40dp"
-        android:layout_marginStart="144dp"
         android:text="Gerakan #MeToo dalam Penegakan"
         android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="603dp" />
+        tools:layout_editor_absoluteY="576dp" />
 
     <TextView
         android:id="@+id/textView16"
