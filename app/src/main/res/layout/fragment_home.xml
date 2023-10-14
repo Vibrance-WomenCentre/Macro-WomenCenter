@@ -137,8 +137,9 @@
         android:layout_width="290dp"
         android:layout_height="110dp"
         android:background="@drawable/rectangle2"
+        android:elevation="-60dp"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="569dp" />
+        tools:layout_editor_absoluteY="576dp" />
 
     <TextView
         android:layout_width="203dp"
@@ -174,11 +175,11 @@
         android:id="@+id/textView12"
         android:layout_width="154dp"
         android:layout_height="40dp"
-        android:layout_marginStart="148dp"
+        android:layout_marginStart="144dp"
         android:text="Gerakan #MeToo dalam Penegakan"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="576dp" />
+        tools:layout_editor_absoluteY="603dp" />
 
     <TextView
         android:id="@+id/textView16"
@@ -285,8 +286,20 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="359dp" />
 
-
-
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="402dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="1dp"
+        android:elevation="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
