@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/primary"
     tools:context=".Profile_Consult">
 
  <LinearLayout
@@ -62,8 +63,6 @@
       tools:ignore="MissingConstraints" />
  </LinearLayout>
 
- />
-
  <ImageView
      android:id="@+id/imageVera"
      android:layout_width="wrap_content"
@@ -109,20 +108,20 @@
      app:layout_constraintStart_toStartOf="parent"
      app:layout_constraintTop_toBottomOf="@+id/imageVera"
      app:layout_constraintVertical_bias="0.756"
-     tools:ignore="MissingConstraints" />
+     tools:ignore="MissingConstraints" ></TextView>
 
 
  <TextView
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:layout_marginBottom="412dp"
+     android:fontFamily="@font/nunitoreguler"
      android:text="@string/harga1"
      android:textColor="@color/black"
-     android:fontFamily="@font/nunitoreguler"
      android:textSize="12sp"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
-     app:layout_constraintHorizontal_bias="0.498"
+     app:layout_constraintHorizontal_bias="0.501"
      app:layout_constraintStart_toStartOf="parent"
      tools:ignore="MissingConstraints">
 
@@ -138,14 +137,14 @@
      android:textSize="11sp"
      tools:ignore="MissingConstraints"
      tools:layout_editor_absoluteX="208dp"
-     tools:layout_editor_absoluteY="273dp" />
+     tools:layout_editor_absoluteY="273dp" ></TextView>
 
  <ImageView
      android:layout_width="17dp"
      android:layout_height="14dp"
      android:src="@drawable/star"
      tools:ignore="MissingConstraints"
-     tools:layout_editor_absoluteX="184dp"
+     tools:layout_editor_absoluteX="185dp"
      tools:layout_editor_absoluteY="273dp" />
 
  <Button
@@ -177,29 +176,29 @@
  <TextView
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
+     android:fontFamily="@font/nuntobold"
      android:text="@string/ahli"
      android:textColor="@color/black"
      android:textSize="14sp"
-     android:fontFamily="@font/nuntobold"
      tools:ignore="MissingConstraints"
      tools:layout_editor_absoluteX="16dp"
-     tools:layout_editor_absoluteY="356dp"></TextView>
+     tools:layout_editor_absoluteY="336dp"></TextView>
 
  <TextView
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:text="@string/spesialis"
      android:fontFamily="@font/nunitoreguler"
+     android:text="@string/spesialis"
      android:textColor="@color/black"
      android:textSize="12sp"
+     tools:ignore="MissingConstraints"
      tools:layout_editor_absoluteX="28dp"
-     tools:layout_editor_absoluteY="383dp"
-     tools:ignore="MissingConstraints" />
+     tools:layout_editor_absoluteY="357dp" />
 
  <TextView
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:layout_marginBottom="212dp"
+     android:layout_marginBottom="236dp"
      android:fontFamily="@font/nuntobold"
      android:text="Pilih Tanggal"
      android:textColor="@color/black"
@@ -211,7 +210,7 @@
      android:id="@+id/textView14"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:layout_marginBottom="72dp"
+     android:layout_marginBottom="108dp"
      android:fontFamily="@font/nuntobold"
      android:text="Pilih Waktu"
      android:textColor="@color/black"
@@ -225,10 +224,12 @@
      android:fontFamily="@font/nunitoreguler"
      android:paddingStart="5dp"
      android:paddingEnd="5dp"
+     android:backgroundTint="@color/primary"
+     android:textColor="#7C7C7C"
      android:text="@string/rabu"
      android:textSize="9.5sp"
      tools:layout_editor_absoluteX="16dp"
-     tools:layout_editor_absoluteY="535dp" />
+     tools:layout_editor_absoluteY="496dp" />
 
  <Button
      android:layout_width="56dp"
@@ -238,8 +239,10 @@
      android:paddingEnd="5dp"
      android:text="@string/kamis"
      android:textSize="9.5sp"
-     tools:layout_editor_absoluteX="81dp"
-     tools:layout_editor_absoluteY="536dp" />
+     android:backgroundTint="@color/primary"
+     android:textColor="#7C7C7C"
+     tools:layout_editor_absoluteX="82dp"
+     tools:layout_editor_absoluteY="496dp" />
 
  <Button
      android:layout_width="56dp"
@@ -248,9 +251,11 @@
      android:paddingStart="5dp"
      android:paddingEnd="5dp"
      android:text="@string/jumat"
+     android:backgroundTint="@color/primary"
+     android:textColor="#7C7C7C"
      android:textSize="9.5sp"
      tools:layout_editor_absoluteX="146dp"
-     tools:layout_editor_absoluteY="535dp" />
+     tools:layout_editor_absoluteY="496dp" />
 
  <Button
      android:layout_width="56dp"
@@ -260,8 +265,8 @@
      android:paddingEnd="5dp"
      android:text="@string/sabtu"
      android:textSize="9.5sp"
-     tools:layout_editor_absoluteX="211dp"
-     tools:layout_editor_absoluteY="535dp" />
+     tools:layout_editor_absoluteX="210dp"
+     tools:layout_editor_absoluteY="496dp" />
 
  <Button
      android:layout_width="56dp"
@@ -270,9 +275,11 @@
      android:paddingStart="5dp"
      android:paddingEnd="5dp"
      android:text="@string/minggu"
+     android:backgroundTint="@color/primary"
+     android:textColor="#7C7C7C"
      android:textSize="9.5sp"
-     tools:layout_editor_absoluteX="280dp"
-     tools:layout_editor_absoluteY="535dp" />
+     tools:layout_editor_absoluteX="279dp"
+     tools:layout_editor_absoluteY="496dp" />
 
  <Button
      android:layout_width="55dp"
@@ -281,8 +288,86 @@
      android:paddingStart="5dp"
      android:paddingEnd="5dp"
      android:text="@string/senin"
+     android:backgroundTint="@color/primary"
+     android:textColor="#7C7C7C"
      android:textSize="9.5sp"
-     tools:layout_editor_absoluteX="349dp"
-     tools:layout_editor_absoluteY="535dp" />
+     tools:layout_editor_absoluteX="340dp"
+     tools:layout_editor_absoluteY="496dp"></Button>
 
+ <Button
+     android:layout_width="55dp"
+     android:layout_height="40dp"
+     android:backgroundTint="@color/primary"
+     android:textColor="#7C7C7C"
+     android:fontFamily="@font/nunitoreguler"
+     android:paddingStart="5dp"
+     android:paddingEnd="5dp"
+     android:text="11:00"
+     android:textSize="9.5sp"
+     tools:layout_editor_absoluteX="17dp"
+     tools:layout_editor_absoluteY="624dp"></Button>
+
+ <Button
+     android:layout_width="55dp"
+     android:layout_height="40dp"
+     android:backgroundTint="@color/primary"
+     android:textColor="#7C7C7C"
+     android:fontFamily="@font/nunitoreguler"
+     android:paddingStart="5dp"
+     android:paddingEnd="5dp"
+     android:text="12:00"
+     android:textSize="9.5sp"
+     tools:layout_editor_absoluteX="91dp"
+     tools:layout_editor_absoluteY="624dp"></Button>
+
+ <Button
+     android:layout_width="55dp"
+     android:layout_height="40dp"
+     android:backgroundTint="@color/primary"
+     android:textColor="#7C7C7C"
+     android:fontFamily="@font/nunitoreguler"
+     android:paddingStart="5dp"
+     android:paddingEnd="5dp"
+     android:text="13:00"
+     android:textSize="9.5sp"
+     tools:layout_editor_absoluteX="169dp"
+     tools:layout_editor_absoluteY="624dp"></Button>
+
+ <Button
+     android:layout_width="55dp"
+     android:layout_height="40dp"
+     android:backgroundTint="@color/pink"
+     android:fontFamily="@font/nunitoreguler"
+     android:paddingStart="5dp"
+     android:paddingEnd="5dp"
+     android:text="14:00"
+     android:textSize="9.5sp"
+     tools:layout_editor_absoluteX="245dp"
+     tools:layout_editor_absoluteY="624dp"></Button>
+
+ <Button
+     android:layout_width="55dp"
+     android:layout_height="40dp"
+     android:backgroundTint="@color/primary"
+     android:fontFamily="@font/nunitoreguler"
+     android:paddingStart="5dp"
+     android:paddingEnd="5dp"
+     android:text="15:00"
+     android:textColor="#7C7C7C"
+     android:textSize="9.5sp"
+     tools:layout_editor_absoluteX="319dp"
+     tools:layout_editor_absoluteY="624dp"></Button>
+
+ <Button
+     android:layout_width="145dp"
+     android:layout_height="41dp"
+     android:backgroundTint="@color/pink"
+     android:fontFamily="@font/nuntobold"
+     android:paddingStart="5dp"
+     android:paddingEnd="5dp"
+     android:text="Pilih Jadwal"
+     android:textSize="12sp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     tools:layout_editor_absoluteY="683dp"></Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
