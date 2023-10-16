@@ -7,39 +7,7 @@
     android:background="#FFF7F2"
     tools:context=".ui.home.HomeFragment">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/pink"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        app:popupTheme="@style/Theme.AppCompat.Light">
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="157dp"
-            android:text="HI AURORA!"
-            android:textAlignment="center"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/baseline_headset_mic_24"
-            android:layout_marginStart="35dp"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/baseline_question_mark_24"
-            android:layout_marginStart="10dp"/>
-
-
-    </androidx.appcompat.widget.Toolbar>
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="415dp"
