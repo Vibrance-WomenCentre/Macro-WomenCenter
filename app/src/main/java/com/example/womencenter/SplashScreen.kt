@@ -3,6 +3,7 @@ package com.example.womencenter
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.womencenter.ui.login_register.LoginActivty
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -16,7 +17,7 @@ class SplashScreen : AppCompatActivity() {
 
         CoroutineScope(Dispatchers.Main).launch {
             delay(4000)
-            val intent = Intent(this@SplashScreen, MainActivity::class.java)
+            val intent = Intent(this@SplashScreen, NewUser::class.java)
             startActivity(intent)
             finish()
         }
