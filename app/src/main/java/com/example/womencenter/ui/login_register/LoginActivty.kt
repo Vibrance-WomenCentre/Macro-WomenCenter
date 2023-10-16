@@ -9,8 +9,10 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.womencenter.HomeActivity
 import com.example.womencenter.MainActivity
 import com.example.womencenter.R
+import com.example.womencenter.ui.home.HomeFragment
 
 class LoginActivty : AppCompatActivity(), View.OnClickListener {
     private lateinit var etusername : EditText
@@ -51,7 +53,7 @@ class LoginActivty : AppCompatActivity(), View.OnClickListener {
             R.id.btn_login -> {
                 /*val kiki = Intent(this@LoginActivty)
                 resultLauncher.launch(kiki)*/
-                val bb = Intent(this@LoginActivty, MainActivity::class.java)
+                val bb = Intent(this@LoginActivty, HomeActivity::class.java)
                 resultLauncher.launch(bb)
             }
             R.id.textView3 -> {

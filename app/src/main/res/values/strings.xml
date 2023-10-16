@@ -31,6 +31,7 @@
     <string name="sabtu">Sabtu \n 13</string>
     <string name="minggu">Minggu \n 14</string>
     <string name="senin">Senin \n 15</string>
+
     <style name="DialogAnimation">
         <item name="android:windowEnterAnimation">@anim/slide_in</item>
         <item name="android:windowExitAnimation">@anim/slide_out</item>
