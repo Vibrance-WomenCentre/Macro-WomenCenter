@@ -1,16 +1,20 @@
 package com.example.womencenter
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
+import com.example.womencenter.NewUser
+import com.example.womencenter.R
+import com.example.womencenter.ui.login_register.LoginActivty
 
 class ChatActivity : AppCompatActivity() {
-    // Deklarasi variabel-variabel dan view yang diperlukan
     private lateinit var chatScrollView: ScrollView
     private lateinit var chatLayout: LinearLayout
     private lateinit var messageInput: EditText
@@ -18,30 +22,37 @@ class ChatActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat)
+        supportActionBar?.hide()
 
-        // Inisialisasi view
         chatScrollView = findViewById(R.id.chatScrollView)
         chatLayout = findViewById(R.id.chatLayout)
         messageInput = findViewById(R.id.messageInput)
 
-        // Set listener untuk tombol kirim pesan
         val sendButton: Button = findViewById(R.id.sendButton)
         sendButton.setOnClickListener {
             val messageText = messageInput.text.toString().trim()
             if (messageText.isNotEmpty()) {
-                // Buat TextView untuk pesan baru
                 val messageTextView = TextView(this)
                 messageTextView.text = messageText
                 messageTextView.setTextColor(Color.BLACK)
-
-                // Tambahkan pesan ke dalam layout chat
                 chatLayout.addView(messageTextView)
-
-                // Reset input teks
                 messageInput.text.clear()
-
-                // Scroll ke bawah untuk menampilkan pesan terbaru
                 chatScrollView.post { chatScrollView.fullScroll(ScrollView.FOCUS_DOWN) }
+            }
+        }
+
+        // Kode ini harus ditempatkan di luar onCreate
+    }
+
+    fun onClick(view: View) {
+        when (view.id) {
+            R.id.btn_next4 -> {
+                val intent = Intent(this@ChatActivity, LoginActivty::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_lewati4 -> {
+                val intent = Intent(this@ChatActivity, LoginActivty::class.java)
+                startActivity(intent)
             }
         }
     }

@@ -11,6 +11,7 @@ class NewScreen_2 : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_screen2)
+        supportActionBar?.hide()
 
         val btnNext : Button = findViewById(R.id.btn_next2)
         btnNext.setOnClickListener(this)

@@ -58,7 +58,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <!-- Tambahkan elemen-elemen chat di sini -->
     <!-- ... (elemen lainnya) ... -->
 
     <!-- ScrollView untuk menampilkan pesan chat -->
@@ -79,18 +78,62 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <!-- Tambahkan pesan-pesan chat di sini -->
+            <!-- Contoh pesan dari pengguna -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/vera_img"
+                    android:layout_marginEnd="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan dari pengguna"
+                    android:background="@drawable/bublechat"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <!-- Contoh pesan dari konsultan -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/vera_img"
+                    android:layout_marginEnd="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan dari konsultan"
+                    android:background="@drawable/bublechat"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
     <!-- Input teks untuk pesan chat -->
+
+    <!-- Tombol "Kirim" -->
     <EditText
         android:id="@+id/messageInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="684dp"
-        android:hint="MasukanTeks"
+        android:layout_marginTop="680dp"
+        android:hint="   Masukan Pesan"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sendButton"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chatScrollView" />
@@ -99,11 +142,11 @@
         android:id="@+id/sendButton"
         android:layout_width="66dp"
         android:layout_height="38dp"
-        android:layout_marginTop="684dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="4dp"
         android:drawableLeft="@drawable/send"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chatScrollView" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

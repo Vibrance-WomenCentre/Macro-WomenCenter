@@ -82,21 +82,28 @@
 
     <!-- Tombol Number -->
 
+
     <ImageButton
         android:id="@+id/speakerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
         android:src="@drawable/speaker"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="501dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/callBatalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
         android:src="@drawable/callended"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="501dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/numberButton"

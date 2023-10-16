@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+
 }
 
 android {
@@ -58,4 +59,6 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     /*Material Design*/
     implementation ("com.google.android.material:material:1.3.0-alpha03")
+
+
 }

@@ -11,6 +11,7 @@ class NewUser : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_user)
+        supportActionBar?.hide()
 
         val btnNext : Button = findViewById(R.id.btn_next)
         btnNext.setOnClickListener(this)
