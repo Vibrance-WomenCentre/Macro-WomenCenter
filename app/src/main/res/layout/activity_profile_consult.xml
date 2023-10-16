@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary"
+    android:background="#FFF7F2"
     tools:context=".Profile_Consult">
 
  <LinearLayout
      android:id="@+id/linearLayout"
      android:layout_width="match_parent"
      android:layout_height="25dp"
-     android:background="@color/white"
      tools:ignore="MissingConstraints">
 
   <ImageView
@@ -66,66 +65,153 @@
  />
 
  <ImageView
-     android:id="@+id/imagePutri"
+     android:id="@+id/imageVera"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:layout_marginTop="84dp"
-     android:src="@drawable/psikolog"
+     android:src="@drawable/vera_img"
      app:layout_constraintEnd_toEndOf="parent"
-     app:layout_constraintHorizontal_bias="0.498"
      app:layout_constraintStart_toStartOf="parent"
      app:layout_constraintTop_toTopOf="parent" />
 
  <TextView
+     android:id="@+id/textView8"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:text="@string/psikolog1s"
+     android:layout_marginBottom="484dp"
+     android:fontFamily="@font/nuntobold"
+     android:text="@string/laws1"
+     android:textColor="@color/black"
      android:textSize="14sp"
      android:textStyle="bold"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
      app:layout_constraintHorizontal_bias="0.498"
      app:layout_constraintStart_toStartOf="parent"
-     app:layout_constraintTop_toBottomOf="@+id/imagePutri"
-     app:layout_constraintVertical_bias="0.042"
+     app:layout_constraintTop_toBottomOf="@+id/imageVera"
+     app:layout_constraintVertical_bias="0.833"
      tools:ignore="MissingConstraints" />
+
+
+ <TextView
+     android:id="@+id/tvjob"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="460dp"
+     android:text="@string/job"
+     android:textColor="@color/black"
+     android:textSize="12sp"
+     android:fontFamily="@font/nunitoreguler"
+     android:textStyle="normal"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.498"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/imageVera"
+     app:layout_constraintVertical_bias="0.756"
+     tools:ignore="MissingConstraints" />
+
 
  <TextView
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:text="@string/bidangpsikolog1"
+     android:layout_marginBottom="412dp"
+     android:text="@string/harga1"
+     android:textColor="@color/black"
+     android:fontFamily="@font/nunitoreguler"
      android:textSize="12sp"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
-     app:layout_constraintHorizontal_bias="0.508"
+     app:layout_constraintHorizontal_bias="0.498"
      app:layout_constraintStart_toStartOf="parent"
-     app:layout_constraintTop_toBottomOf="@+id/imagePutri"
-     app:layout_constraintVertical_bias="0.107"
-     tools:ignore="MissingConstraints" />
+     tools:ignore="MissingConstraints">
 
- <ImageButton
+ </TextView>
+
+ <TextView
+     android:id="@+id/tv_rating"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:layout_marginBottom="4dp"
-     android:paddingTop="10dp"
-     android:src="@drawable/baseline_arrow_back_ios_new_24"
-     app:layout_constraintBottom_toTopOf="@+id/imagePutri"
+     android:fontFamily="@font/nuntobold"
+     android:text="@string/rating1"
+     android:textColor="@color/black"
+     android:textSize="11sp"
+     tools:ignore="MissingConstraints"
+     tools:layout_editor_absoluteX="208dp"
+     tools:layout_editor_absoluteY="273dp" />
+
+ <ImageView
+     android:layout_width="17dp"
+     android:layout_height="14dp"
+     android:src="@drawable/star"
+     tools:ignore="MissingConstraints"
+     tools:layout_editor_absoluteX="184dp"
+     tools:layout_editor_absoluteY="273dp" />
+
+ <Button
+     android:id="@+id/btn_back"
+     android:layout_width="48dp"
+     android:layout_height="48dp"
+     android:backgroundTint="@color/primary"
+     android:contentDescription="@string/back_button"
+     android:drawableLeft="@drawable/baseline_arrow_back_ios_new_24"
+     android:translationZ="10dp"
+     tools:ignore="MissingConstraints"
+     tools:layout_editor_absoluteX="0dp"
+     tools:layout_editor_absoluteY="36dp"></Button>
+
+ <Button
+     android:layout_width="48dp"
+     android:layout_height="48dp"
+     android:layout_marginEnd="28dp"
+     android:backgroundTint="@color/primary"
+     android:contentDescription="@string/back_button"
+     android:drawableLeft="@drawable/fav"
+     android:translationZ="10dp"
      app:layout_constraintEnd_toEndOf="parent"
-     app:layout_constraintHorizontal_bias="0.0"
-     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintHorizontal_bias="1.0"
+     app:layout_constraintStart_toEndOf="@+id/btn_back"
+     tools:ignore="MissingConstraints"
+     tools:layout_editor_absoluteY="43dp"></Button>
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/ahli"
+     android:textColor="@color/black"
+     android:textSize="14sp"
+     android:fontFamily="@font/nuntobold"
+     tools:ignore="MissingConstraints"
+     tools:layout_editor_absoluteX="16dp"
+     tools:layout_editor_absoluteY="356dp"></TextView>
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/spesialis"
+     android:fontFamily="@font/nunitoreguler"
+     android:textColor="@color/black"
+     android:textSize="12sp"
+     tools:layout_editor_absoluteX="28dp"
+     tools:layout_editor_absoluteY="383dp"
      tools:ignore="MissingConstraints" />
 
  <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/rating1"
-    android:textStyle="bold"
-    android:textSize="14sp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/imagePutri"
-    app:layout_constraintVertical_bias="0.165"
-    tools:ignore="MissingConstraints" />
-    />
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="212dp"
+     android:fontFamily="@font/nuntobold"
+     android:text="Pilih Tanggal"
+     android:textColor="@color/black"
+     android:textSize="14sp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     tools:layout_editor_absoluteX="16dp" />
+
+ <TextView
+     android:layout_width="118dp"
+     android:layout_height="39dp"
+     android:background="@drawable/rectangle1"
+     android:backgroundTint="@color/pink"
+     tools:layout_editor_absoluteX="11dp"
+     tools:layout_editor_absoluteY="535dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

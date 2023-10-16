@@ -17,7 +17,7 @@ class SplashScreen : AppCompatActivity() {
 
         CoroutineScope(Dispatchers.Main).launch {
             delay(4000)
-            val intent = Intent(this@SplashScreen, LoginActivty::class.java)
+            val intent = Intent(this@SplashScreen, NewUser::class.java)
             startActivity(intent)
             finish()
         }
