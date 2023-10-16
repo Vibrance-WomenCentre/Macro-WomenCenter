@@ -54,7 +54,8 @@ class LoginActivty : AppCompatActivity(), View.OnClickListener {
                 /*val kiki = Intent(this@LoginActivty)
                 resultLauncher.launch(kiki)*/
                 val bb = Intent(this@LoginActivty, HomeActivity::class.java)
-                resultLauncher.launch(bb)
+                startActivity(bb)
+                /*resultLauncher.launch(bb)*/
             }
             R.id.textView3 -> {
                val aa = Intent(this@LoginActivty, RegisterActivity::class.java)
