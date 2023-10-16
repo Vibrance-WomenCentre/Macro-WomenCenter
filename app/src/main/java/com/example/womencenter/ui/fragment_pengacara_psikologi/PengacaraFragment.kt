@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import com.example.womencenter.Profile_Consult
 import com.example.womencenter.R
 import com.example.womencenter.ui.login_register.LoginActivty
 
@@ -26,7 +27,7 @@ class PengacaraFragment : Fragment() {
 
         val imageView = view.findViewById<ImageView>(R.id.ivVera)
         imageView.setOnClickListener {
-            val intent = Intent(activity, LoginActivty::class.java)
+            val intent = Intent(activity, Profile_Consult::class.java)
             startActivity(intent)
         }
         return view
