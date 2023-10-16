@@ -9,7 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#FFF7F2</color>
     <color name="pink">#BE6690</color>
-
+    <color name="pinky">#D493B2</color>
+    <color name="redtext">#691919</color>
 
 
 </resources>

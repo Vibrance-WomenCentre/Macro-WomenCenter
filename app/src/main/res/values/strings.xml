@@ -25,5 +25,19 @@
     <string name="awall3">Pengetahuan yang baik dan cukup dapat meningkatkan kepedulian kita sebagai manusia wanita seutuhnya</string>
     <string name="awal4">Love Ourselves!</string>
     <string name="awall4">Sehingga kita semua siap mencintai diri kita sendiri, memulai hari dengan penuh percaya diri</string>
+    <string name="rabu">Rabu \n 10</string>
+    <string name="kamis">Kamis \n 11</string>
+    <string name="jumat">Jumat \n 12</string>
+    <string name="sabtu">Sabtu \n 13</string>
+    <string name="minggu">Minggu \n 14</string>
+    <string name="senin">Senin \n 15</string>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

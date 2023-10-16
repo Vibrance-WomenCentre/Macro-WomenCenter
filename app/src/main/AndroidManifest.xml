@@ -13,12 +13,6 @@
         android:theme="@style/Theme.WomenCenter"
         tools:targetApi="31">
         <activity
-            android:name=".ChatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Call"
-            android:exported="false" />
-        <activity
             android:name=".NewScreen_4"
             android:exported="false" />
         <activity

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment_pengacara_psikologi.PengacaraFragment"
+    android:background="@color/primary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengacara yang tersedia"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nuntobold"
+        android:layout_marginTop="7dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_1730"
+        android:id="@+id/ivVera"
+        android:layout_marginTop="42dp"
+        android:layout_marginStart="24dp"
+        android:clickable="true"/>
+
+</FrameLayout>
