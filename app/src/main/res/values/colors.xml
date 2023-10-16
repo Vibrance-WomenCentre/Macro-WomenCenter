@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#FFF0F4</color>
     <color name="pink">#BE6690</color>
-
+    <color name="topnavbar">#D493B2</color>
+    <color name="text">#691919</color>
 </resources>

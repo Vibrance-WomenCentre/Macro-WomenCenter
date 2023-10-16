@@ -9,4 +9,6 @@
     <string name="harga1">Rp. 50.000</string>
     <string name="ahli">Bidang Keahlian</string>
     <string name="spesialis">-Trauma \n -Takut \n -Stress \n -Depresi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

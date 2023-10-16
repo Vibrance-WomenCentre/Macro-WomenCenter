@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.womencenter.CalendarActivity
 import com.example.womencenter.R
 
 class LoginActivty : AppCompatActivity(), View.OnClickListener {
@@ -48,8 +49,8 @@ class LoginActivty : AppCompatActivity(), View.OnClickListener {
     override fun onClick(L: View) {
         when(L.id) {
             R.id.btn_login -> {
-                /*val kiki = Intent(this@LoginActivty)
-                resultLauncher.launch(kiki)*/
+                val kiki = Intent(this@LoginActivty, CalendarActivity::class.java)
+                resultLauncher.launch(kiki)
             }
             R.id.textView3 -> {
                 val aa = Intent(this@LoginActivty, RegisterActivity::class.java)
