@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="@color/primary"
-    tools:context=".MainActivity">
+    tools:context=".MetodePembayaran">
 
     <TextView
         android:id="@+id/titleTextView"
@@ -59,76 +59,80 @@
 
         <RadioButton
             android:id="@+id/virtualAccountRadioButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Akun virtual"
+            android:button="@null"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:drawablePadding="8dp"
+            android:background="@color/pink"
+            android:text=" Akun Virtual"
             android:textSize="16sp" />
 
         <Spinner
-            android:id="@+id/paymentMethodSpinner"
-            android:layout_width="0dp"
+            android:id="@+id/bankSpinner"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/akunvirtual"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/virtualAccountRadioButton" />
+            style="@style/SpinnerWithoutDropdownArrow" />
+
 
         <RadioButton
             android:id="@+id/electronicMoneyRadioButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Uang Elektronik"
+            android:button="@null"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:drawablePadding="8dp"
+            android:background="@color/pink"
+            android:text=" Uang Elektronik"
             android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/electronicMoneySpinner"
-            android:layout_width="0dp"
+            style="@style/SpinnerWithoutDropdownArrow"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/electronicMoneyRadioButton" />
+            android:layout_marginTop="8dp" />
+
 
         <RadioButton
             android:id="@+id/miniMarketRadioButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mini Market"
+            android:button="@null"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:drawablePadding="8dp"
+            android:background="@color/pink"
+            android:text=" Mini Market"
             android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/miniMarketSpinner"
-            android:layout_width="0dp"
+            style="@style/SpinnerWithoutDropdownArrow"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/miniMarketRadioButton" />
-
-        <!-- ... (radio buttons dan spinner) ... -->
+            android:layout_marginTop="8dp" />
     </RadioGroup>
+
 
     <Button
         android:id="@+id/totalPriceButton"
         android:layout_width="220dp"
         android:layout_height="69dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="624dp"
         android:text="Total Harga              Rp 50.000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paymentMethodRadioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
     <Button
         android:id="@+id/continuePaymentButton"
-        android:layout_width="134dp"
-        android:layout_height="53dp"
+        android:layout_width="124dp"
+        android:layout_height="54dp"
         android:text="Lanjutkan Pembayaran"
-        android:textSize="13sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
