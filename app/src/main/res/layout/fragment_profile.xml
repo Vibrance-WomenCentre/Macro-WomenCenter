@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,10 +7,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFF7F2"
     tools:context=".ui.Profile.ProfileFragment">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -33,6 +29,7 @@
                 android:text="HI AURORA!"
                 android:textAlignment="center" />
 
+
         </androidx.appcompat.widget.Toolbar>
 
         <ImageView
@@ -40,9 +37,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="120dp"
             android:background="@drawable/profile"
-            android:src="@drawable/psikolog" />
+            android:src="@drawable/potoprofil" />
 
         <Button
+            android:id="@+id/btn_profile"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -51,55 +49,216 @@
             android:layout_marginTop="260dp"
             android:layout_marginEnd="121dp"
             android:text="Edit Profile" />
-        <EditText
-            android:layout_width="600dp"
+
+        <LinearLayout
+            android:id="@+id/ll_notifikasi"
+            android:layout_below="@+id/btn_profile"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/vector"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Notifikasi"
+                android:layout_marginStart="16dp" />
+
+           <com.google.android.material.switchmaterial.SwitchMaterial
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="230dp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_riwayat"
+        android:layout_below="@+id/ll_notifikasi"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/history"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Riwayat"
+            android:layout_marginStart="16dp" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="270dp"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
             android:layout_height="30dp"
-            android:background="@drawable/rectangle2"
-            android:layout_marginTop="350dp"
-            android:layout_marginStart="0dp"
-            android:text="Notifikasi"
-            android:elevation="4dp"/>
-        <FrameLayout
+            android:layout_marginRight="230dp"
+            android:src="@drawable/gariskanan" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_daftarkosultasi"
+        android:layout_below="@+id/ll_riwayat"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/icondaftar"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Daftar Kosultasi"
+            android:layout_marginStart="16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="220dp"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="230dp"
+            android:src="@drawable/gariskanan" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_syaratdanketentuan"
+        android:layout_below="@+id/ll_daftarkosultasi"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/syarat"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Syarat dan Ketentuan"
+            android:layout_marginStart="16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="189dp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="230dp"
+            android:src="@drawable/gariskanan" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kebijakanprivasi"
+        android:layout_below="@+id/ll_syaratdanketentuan"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/privasi"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Kebijakan Privasi"
+            android:layout_marginStart="16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="215dp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="230dp"
+            android:src="@drawable/gariskanan" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/fragment_container">
 
-            <androidx.coordinatorlayout.widget.CoordinatorLayout
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottomAppBar"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:backgroundTint="@color/pink"
+                app:fabCradleMargin="10dp"
+                app:fabCradleRoundedCornerRadius="50dp"
+                app:fabCradleVerticalOffset="10dp">
 
-                <com.google.android.material.bottomappbar.BottomAppBar
-                    android:id="@+id/bottomAppBar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:backgroundTint="@color/pink"
-                    app:fabCradleMargin="10dp"
-                    app:fabCradleRoundedCornerRadius="50dp"
-                    app:fabCradleVerticalOffset="10dp">
-
-                    <com.google.android.material.bottomnavigation.BottomNavigationView
-                        android:id="@+id/bottom_navigation"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/transparent"
-                        app:labelVisibilityMode="labeled"
-                        app:menu="@menu/bottom_nav_menu" />
-
-                </com.google.android.material.bottomappbar.BottomAppBar>
-
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/fab"
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_navigation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/app_name"
-                    android:src="@drawable/baseline_calendar_month_24"
-                    app:layout_anchor="@id/bottomAppBar"
-                    app:maxImageSize="40dp" />
+                    android:background="@android:color/transparent"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/bottom_nav_menu" />
 
-            </androidx.coordinatorlayout.widget.CoordinatorLayout>
-        </FrameLayout>
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:layout_anchor="@id/bottomAppBar"
+                app:maxImageSize="40dp" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
 
     </RelativeLayout>
-
-</androidx.drawerlayout.widget.DrawerLayout>
