@@ -18,11 +18,15 @@
         <activity
             android:name=".InformasiPengaduan"
             android:exported="false" />
+
         <activity
             android:name=".PembayaranBerhasil"
             android:exported="false" />
         <activity
             android:name=".KonfirmasiBayar"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".NewScreen_4"

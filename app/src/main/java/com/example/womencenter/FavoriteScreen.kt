@@ -6,6 +6,6 @@ import android.os.Bundle
 class FavoriteScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_favorite_screen)
+        setContentView(R.layout.activity_fav_screen)
     }
 }
