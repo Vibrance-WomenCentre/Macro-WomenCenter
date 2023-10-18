@@ -3,4 +3,75 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="feature">Media Edukasi</string>
+    <string name="edu2">Artikel Edukasi</string>
+    <string name="edu3">Vidio Edukasi</string>
+    <string name="back">panah balik</string>
+    <string name="lbl_women_center">WOMEN CENTER </string>
+    <string name="lbl_13_agustus_2023">13 Agustus 2023</string>
+    <string name="msg_mempersiapkan_d">Mempersiapkan Diri untuk Proses Peradilan: Yuk ketahui kesiapan hukum dan mental diri kita!</string>
+    <string name="lbl_15_agustus_2023">15 Agustus 2023</string>
+    <string name="lbl_artikel_edukasi">Artikel Edukasi</string>
+    <string name="lbl_hii">Hii </string>
+    <string name="msg_hectic_nya_pers">Hectic-nya persiapan seringkali mengakibatkan kita terlalu fokus pada hal-hal kecil namun justru melupakan poin pentingnya. Misalnya dokumen administrasi , apapun jenisnya...........</string>
+    <string name="msg_mempersiapkan_k">Mempersiapkan Korban Menuju Proses Peradilan: Yuk ketahui kesiapan hukum dan mental kita!</string>
+    <string name="lbl_self_treatment">self-treatment </string>
+    <string name="lbl_jessica_lee">Jessica Lee</string>
+    <string name="msg_macam_macam_tra">Macam-macam trauma beserta penanganannya</string>
+    <string name="msg_selengkapnya">selengkapnya........</string>
+    <string name="msg_tips_menjawab_p">Tips menjawab pertanyaan yang membuatmu tidak nyaman</string>
+    <string name="lbl_dimanapun">dimanapun......</string>
+    <string name="lbl_putri_ayu">Putri Ayu</string>
+    <string name="lbl_inggrid_raharja">Inggrid Raharja</string>
+    <string name="msg_ketika_trauma_m">Ketika trauma menyerang: Tips self-treatment dimanapun......</string>
+    <string name="lbl_17_juli_2023">17 Juli 2023</string>
+    <string name="lbl_25_agustus_2023">25 Agustus 2023</string>
+    <string name="msg_vidio_edukasi_u">Vidio edukasi untukmu</string>
+    <string name="msg_tenang_kamu_ng">\u201cTenang kamu nggak sendirian\u201d Sebuah seni menerima diri</string>
+    <string name="lbl_girls">Girls</string>
+    <string name="lbl_20_agustus_2023">20 Agustus 2023</string>
+    <string name="msg_yuk_periksa_kes2">Yuk periksa kesiapan berkas kamu! Dokumen ini sering terlupakan loooh!</string>
+    <string name="lbl_girls2">Girls </string>
+    <string name="lbl_pastikan">pastikan.</string>
+    <string name="lbl_hectic_nya">Hectic-nya </string>
+    <string name="msg_sebelum_menuj">! Sebelum menuju ke tahap peradilan yang cukup menguras waktu dan tenaga ada baiknya periksa kembali kesiapan kita dalam segi hukum. Proses peradilan yang cukup memakan waktu cukup panjang memeriksa ulang dan meyakinkan diri tentang kondisi mental juga perlu dilakukan.
+</string>
+    <string name="lbl_cahaya_mulya">Cahaya Mulya</string>
+    <string name="lbl_7_agustus_2023">7 Agustus 2023</string>
+    <string name="lbl_artikel">Artikel</string>
+    <string name="lbl_5_agustus_2023">5 Agustus 2023</string>
+    <string name="msg_tips_lancar_men">Tips lancar menjelaskan kondisi ketika konsultasi hukum dimulai</string>
+    <string name="msg_kenali_kondisi">Kenali kondisi psikologis sebelum menuju meja hijau</string>
+    <string name="lbl_1_agustus_2023">1 Agustus 2023</string>
+    <string name="lbl_10_agustus_2023">10 Agustus 2023</string>
+    <string name="msg_kecemasanmu_waj">Kecemasanmu wajar kok! Karena kamu sedang tidak baik-baik saja</string>
+    <string name="msg_yuk_periksa_kes">Yuk periksa kesiapan berkas kamu! Dokumen ini sering terlupakan looh!</string>
+    <string name="lbl_vidio">Vidio</string>
+    <string name="lbl_15_juli_2023">15 Juli 2023</string>
+    <string name="msg_ketika_trauma_m2">Ketika trauma menyerang: Tips </string>
+    <string name="msg_tips_mengatasi">Tips mengatasi kegugupan ketika sedang konseling</string>
+    <string name="msg_yuk_terus_berka">Yuk terus berkarya! Karena kamu begitu berharga</string>
+    <string name="msg_hii_girls_sebe"> Hii Girls! Sebelum menuju ke tahap peradilan yang cukup menguras waktu dan tenaga ada baiknya periksa kembali kesiapan kita dalam segi hukum. Proses peradilan yang cukup memakan waktu cukup panjang memeriksa ulang dan meyakinkan diri tentang kondisi mental juga perlu dilakukan.
+        \nGirls juga harus sadar bahwa dalam prosesnya akan ada waktu dimana semua terasa sia-sia, bisikan netizen mungkin juga mempengaruhi keputusan awal kita. Tak apa, tenang kalian tidak sendiri, WOMEN CENTER ada bersama kalian. Nih mimin spill apa saja yang perlu Girls pastikan.
+        </string>
+    <string name="list_dok">\n 1. Laporan Polisi
+        \n 2. Barang Bukti Fisik
+        \n 3. Catatan Pribadi
+        \n 4. Pernyataan Saksi (opsional)
+        \n 5. Catatan Medis
+        \n 6. Dokumen Korespondensi Hukum
+        \n 7. Surat Pemberitahuan atau Permintaan
+        \n 8. Dokumen Identitas Diri</string>
+    <string name="msg_artikel_edukasi">Artikel edukasi untukmu</string>
+    <string name="msg_konsumsi_makana">Konsumsi makanan sehat &amp; lezat: membantu mentalmu.......</string>
+    <string name="msg_gerakan_metoo">Gerakan #MeToo dalam penegakan hukum kasus pelecehan seksual</string>
+    <string name="msg_ada_bersama_kal">ada bersama kalian. Nih mimin spill apa saja yang perlu </string>
+    <string name="lbl_27_juli_2023">27 Juli 2023</string>
+    <string name="msg_mengenal_kondis">Mengenal kondisi kecemasan kita yuk! Mengenal untuk lebih peduli</string>
+    <string name="lbl_amanda_johnson">Amanda Johnson</string>
+    <string name="lbl_media_edukasi">Media Edukasi</string>
+    <string name="msg_persiapan_serin">persiapan seringkali mengakibatkan kita terlalu fokus pada hal-hal kecil namun justru melupakan poin pentingnya. Misalnya dokumen administrasi , apapun jenisnya...........</string>
+    <string name="msg_juga_harus_sada">juga harus sadar bahwa dalam prosesnya akan ada waktu dimana semua terasa sia-sia, bisikan netizen mungkin juga mempengaruhi keputusan awal kita. Tak apa, tenang kalian tidak sendiri, </string>
+    <string name="lbl_deskripsi">Deskripsi</string>
+    <string name="lbl_sri_rahayu">Sri Rahayu</string>
 </resources>

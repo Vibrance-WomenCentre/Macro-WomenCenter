@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EduActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/main_bar"
+            layout="@layout/main_toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Selengkapnya1"
+            android:layout_width="match_parent"
+            android:layout_height="73dp">
+            <TextView
+                android:id="@+id/ArtikelUntukmu"
+                style="@style/Theme.MedEdukasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:ellipsize="end"
+                android:text="@string/msg_artikel_edukasi"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.23" />
+
+            <TextView
+                android:id="@+id/ArtSelengkapnya"
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="60dp"
+                android:ellipsize="end"
+                android:text="@string/msg_selengkapnya"
+                android:textColor="@color/red_700"
+                android:textSize="14.5sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ArtikelUntukmu" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/img_arrowright"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.815"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.489" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shape_divider"
+            app:layout_constraintStart_toStartOf="parent" />
+        <include
+            layout="@layout/item_news_card"
+            android:id="@+id/KlikArt1"/>
+        <View
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/shape_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ArtikelMain"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_rectangle3" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/msg_kenali_kondisi"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.19" />
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:text="@string/lbl_jessica_lee"
+                android:textColor="@color/gray_800"
+                android:textSize="11.8sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="61dp" />
+            <TextView
+                style="@style/NewsFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="60dp"
+                android:ellipsize="end"
+                android:text="@string/lbl_15_agustus_2023"
+                android:textColor="@color/gray_800"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="83dp" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shape_divider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Selengkapnya2"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/VidioUntukmu"
+                style="@style/Theme.MedEdukasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:ellipsize="end"
+                android:text="@string/msg_vidio_edukasi_u"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.23" />
+            <TextView
+                android:id="@+id/VidSelengkapnya"
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="60dp"
+                android:ellipsize="end"
+                android:text="@string/msg_selengkapnya"
+                android:textColor="@color/red_700"
+                android:textSize="14.5sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/VidioUntukmu" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/img_arrowright"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.813"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.489" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shape_divider"
+            app:layout_constraintStart_toStartOf="parent" />
+        <include
+            layout="@layout/item_vid_card"
+            android:id="@+id/KlikArt2"/>
+        <View
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/shape_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Video1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/list1" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/msg_tips_mengatasi"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:text="@string/lbl_sri_rahayu"
+                android:textColor="@color/gray_800"
+                android:textSize="11.8sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="61dp" />
+            <TextView
+                style="@style/NewsFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="60dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/lbl_20_agustus_2023"
+                android:textColor="@color/gray_800"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="83dp" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shape_divider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

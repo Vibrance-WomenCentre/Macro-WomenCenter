@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edu3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/edu3_toolbar"
+            android:id="@+id/myToolbar" />
+        <include
+            layout="@layout/item_vid_card"
+            android:id="@+id/KlikEdu3"/>
+        <View
+            android:layout_width="350dp"
+            android:layout_height="3dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/shape_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Video1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/list1" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/msg_tips_mengatasi"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:text="@string/lbl_sri_rahayu"
+                android:textColor="@color/gray_800"
+                android:textSize="11.8sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="61dp" />
+            <TextView
+                style="@style/NewsFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="60dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/lbl_20_agustus_2023"
+                android:textColor="@color/gray_800"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="83dp" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shape_divider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Video2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/list2" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/msg_tips_lancar_men"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:text="@string/lbl_putri_ayu"
+                android:textColor="@color/gray_800"
+                android:textSize="11.8sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="61dp" />
+            <TextView
+                style="@style/NewsFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="60dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/lbl_13_agustus_2023"
+                android:textColor="@color/gray_800"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="83dp" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shape_divider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Video3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/list3" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/msg_macam_macam_tra"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:text="@string/lbl_inggrid_raharja"
+                android:textColor="@color/gray_800"
+                android:textSize="11.8sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="61dp" />
+            <TextView
+                style="@style/NewsFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="60dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/lbl_10_agustus_2023"
+                android:textColor="@color/gray_800"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="83dp" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shape_divider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Video4"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/list4" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/msg_konsumsi_makana"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:text="@string/lbl_cahaya_mulya"
+                android:textColor="@color/gray_800"
+                android:textSize="11.8sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="61dp" />
+            <TextView
+                style="@style/NewsFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="60dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/lbl_7_agustus_2023"
+                android:textColor="@color/gray_800"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="83dp" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shape_divider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Video5"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/list5" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/msg_ketika_trauma_m"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:text="@string/lbl_amanda_johnson"
+                android:textColor="@color/gray_800"
+                android:textSize="11.8sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="61dp" />
+            <TextView
+                style="@style/NewsFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="60dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/lbl_1_agustus_2023"
+                android:textColor="@color/gray_800"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="83dp" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shape_divider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Video6"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/list6" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/msg_tips_menjawab_p"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <TextView
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:text="@string/lbl_jessica_lee"
+                android:textColor="@color/gray_800"
+                android:textSize="11.8sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="61dp" />
+            <TextView
+                style="@style/NewsFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="60dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/lbl_15_juli_2023"
+                android:textColor="@color/gray_800"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="83dp" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shape_divider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

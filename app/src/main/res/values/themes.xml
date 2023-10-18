@@ -13,4 +13,21 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Base.Theme.MedEdukasi" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/Color_Primary</item>
+    </style>
+
+    <style name="Theme.MedEdukasi" parent="Base.Theme.MedEdukasi">
+        <item name="fontFamily">@font/nunito_bold</item>
+    </style>
+
+    <style name="hiTitle">
+        <item name="fontFamily">@font/nunito_medium</item>
+    </style>
+
+    <style name="NewsFont">
+        <item name="fontFamily">@font/nunito_regular</item>
+    </style>
 </resources>

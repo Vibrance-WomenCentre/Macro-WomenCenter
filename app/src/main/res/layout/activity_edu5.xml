@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edu5Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-77dp">
+
+        <include
+            android:id="@+id/myToolbar"
+            layout="@layout/edu3_toolbar" />
+
+        <ImageView
+            android:id="@+id/mGambar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_rectangle5" />
+
+        <TextView
+            android:id="@+id/dateArticle"
+            style="@style/Theme.MedEdukasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginTop="10dp"
+            android:lineHeight="20dp"
+            android:text="@string/lbl_25_agustus_2023"
+            android:textColor="@color/gray_800"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mJudul"
+            style="@style/Theme.MedEdukasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="15dp"
+            android:lineHeight="20dp"
+            android:text="@string/msg_yuk_periksa_kes"
+            android:textColor="@color/gray_800"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/writerVidio"
+            style="@style/Theme.MedEdukasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            android:lineHeight="10dp"
+            android:text="@string/lbl_inggrid_raharja"
+            android:textColor="@color/bluegray_500"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mDes"
+            style="@style/Theme.MedEdukasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginTop="17dp"
+            android:lineHeight="20dp"
+            android:text="@string/lbl_deskripsi"
+            android:textColor="@color/gray_800"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mDeskripsi"
+            style="@style/NewsFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:lineHeight="23sp"
+            android:text="@string/msg_hectic_nya_pers"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

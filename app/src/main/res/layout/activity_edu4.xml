@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edu4Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/edu2_toolbar"
+            android:id="@+id/myToolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="113dp">
+
+
+            <TextView
+                android:id="@+id/mjudul"
+                style="@style/Theme.MedEdukasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:ellipsize="end"
+                android:lineHeight="20dp"
+                android:maxLines="3"
+                android:text="@string/msg_mempersiapkan_k"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.096" />
+
+            <TextView
+                android:id="@+id/writerJudul"
+                style="@style/hiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="190dp"
+                android:layout_marginBottom="20dp"
+                android:ellipsize="end"
+                android:lineHeight="18dp"
+                android:text="@string/lbl_inggrid_raharja"
+                android:textColor="@color/gray_800"
+                android:textSize="12.5sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/dateJudul"
+                style="@style/NewsFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:lineHeight="9dp"
+                android:text="@string/lbl_25_agustus_2023"
+                android:textColor="@color/gray_800"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/mPostImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_kotak" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/mArticle"
+            style="@style/NewsFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineHeight="23sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/msg_hii_girls_sebe"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/mLisDok"
+            style="@style/NewsFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="15dp"
+            android:lineHeight="23sp"
+            android:text="@string/list_dok"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</ScrollView>
