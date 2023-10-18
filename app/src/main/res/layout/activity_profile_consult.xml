@@ -14,6 +14,8 @@
      android:contentDescription="@string/back_button"
      android:drawableLeft="@drawable/fav"
      app:layout_constraintStart_toEndOf="@+id/btn_back"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
      tools:layout_editor_absoluteY="16dp"></Button>
 
  <Button
@@ -24,16 +26,20 @@
      android:contentDescription="@string/back_button"
      android:drawableLeft="@drawable/baseline_arrow_back_ios_new_24"
      android:translationZ="10dp"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
      tools:layout_editor_absoluteX="16dp"
      tools:layout_editor_absoluteY="18dp"></Button>
 
  <LinearLayout
-     android:id="@+id/linearLayout"
+     android:id="@+id/LayoutAtas"
      android:layout_width="413dp"
      android:layout_height="279dp"
      android:background="@color/primary"
      android:gravity="center"
      android:orientation="vertical"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
      tools:layout_editor_absoluteX="0dp"
      tools:layout_editor_absoluteY="-2dp">
 
@@ -42,23 +48,14 @@
       android:layout_height="wrap_content"
       android:src="@drawable/vera_img"></ImageView>
 
-  <Space
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="5dp"></Space>
-
   <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:fontFamily="@font/nuntobold"
+      android:layout_marginTop="10dp"
       android:text="@string/laws1"
       android:textColor="@color/black"
       android:textSize="14sp"></TextView>
-
-  <Space
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="5dp"></Space>
 
   <TextView
       android:layout_width="wrap_content"
@@ -66,12 +63,8 @@
       android:fontFamily="@font/nuntobold"
       android:text="@string/job"
       android:textColor="#7E7B7B"
+      android:layout_marginTop="5dp"
       android:textSize="12sp"></TextView>
-
-  <Space
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="5dp"></Space>
 
   <LinearLayout
       android:layout_width="wrap_content"
@@ -82,12 +75,8 @@
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:maxHeight="8dp"
+       android:layout_marginTop="5dp"
        android:src="@drawable/star"></ImageView>
-
-   <Space
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginRight="5dp"></Space>
 
    <TextView
        android:layout_width="wrap_content"
@@ -106,25 +95,33 @@
  </LinearLayout>
 
  <TextView
+     android:id="@+id/tv_bidang"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:fontFamily="@font/nuntobold"
      android:text="@string/ahli"
      android:textColor="@color/black"
      android:textSize="14sp"
-     tools:ignore="MissingConstraints"
+     android:layout_marginTop="10dp"
+     android:layout_marginLeft="20dp"
+     app:layout_constraintTop_toBottomOf="@id/LayoutAtas"
+     app:layout_constraintStart_toStartOf="parent"
      tools:layout_editor_absoluteX="16dp"
      tools:layout_editor_absoluteY="291dp"></TextView>
 
  <TextView
+     android:id="@+id/tv_ahlii"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:fontFamily="@font/nunitoreguler"
      android:text="@string/spesialis"
      android:textColor="@color/black"
-     android:textSize="12sp"
-     tools:ignore="MissingConstraints"
+     android:textSize="14sp"
      tools:layout_editor_absoluteX="23dp"
+     android:layout_marginTop="30dp"
+     android:layout_marginLeft="15dp"
+     app:layout_constraintTop_toTopOf="@id/tv_bidang"
+     app:layout_constraintStart_toStartOf="parent"
      tools:layout_editor_absoluteY="327dp" />
 
  <TextView
@@ -133,40 +130,48 @@
      android:layout_marginBottom="260dp"
      android:fontFamily="@font/nuntobold"
      android:text="Pilih Tanggal"
+     android:layout_marginStart="20dp"
      android:textColor="@color/black"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/tv_ahlii"
      android:textSize="14sp"
      app:layout_constraintBottom_toBottomOf="parent"
      tools:layout_editor_absoluteX="16dp" />
 
+
  <LinearLayout
+     android:id="@+id/LayoutHari"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:layout_marginBottom="156dp"
+     android:layout_marginBottom="172dp"
      android:orientation="horizontal"
      app:layout_constraintBottom_toBottomOf="parent"
-     tools:layout_editor_absoluteX="0dp">
+     tools:layout_editor_absoluteX="2dp">
 
   <Button
       android:layout_width="56dp"
       android:layout_height="90dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="5dp"
       android:backgroundTint="@color/primary"
       android:fontFamily="@font/nunitoreguler"
       android:paddingStart="5dp"
       android:paddingEnd="5dp"
-      android:layout_marginLeft="10dp"
       android:text="@string/rabu"
       android:textColor="#7C7C7C"
       android:textSize="9.5sp"
       tools:layout_editor_absoluteX="16dp"
       tools:layout_editor_absoluteY="487dp" />
+
   <Button
       android:layout_width="56dp"
       android:layout_height="90dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="5dp"
       android:backgroundTint="@color/primary"
       android:fontFamily="@font/nunitoreguler"
       android:paddingStart="5dp"
       android:paddingEnd="5dp"
-      android:layout_marginLeft="10dp"
       android:text="@string/kamis"
       android:textColor="#7C7C7C"
       android:textSize="9.5sp"
@@ -176,23 +181,26 @@
   <Button
       android:layout_width="56dp"
       android:layout_height="90dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="5dp"
       android:backgroundTint="@color/primary"
       android:fontFamily="@font/nunitoreguler"
       android:paddingStart="5dp"
       android:paddingEnd="5dp"
-      android:layout_marginLeft="10dp"
       android:text="@string/jumat"
       android:textColor="#7C7C7C"
       android:textSize="9.5sp"
       tools:layout_editor_absoluteX="146dp"
       tools:layout_editor_absoluteY="496dp" />
+
   <Button
       android:layout_width="56dp"
       android:layout_height="90dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="5dp"
       android:fontFamily="@font/nunitoreguler"
       android:paddingStart="5dp"
       android:paddingEnd="5dp"
-      android:layout_marginLeft="10dp"
       android:text="@string/sabtu"
       android:textSize="9.5sp"
       tools:layout_editor_absoluteX="210dp"
@@ -201,11 +209,12 @@
   <Button
       android:layout_width="56dp"
       android:layout_height="90dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="5dp"
       android:backgroundTint="@color/primary"
       android:fontFamily="@font/nunitoreguler"
       android:paddingStart="5dp"
       android:paddingEnd="5dp"
-      android:layout_marginLeft="10dp"
       android:text="@string/minggu"
       android:textColor="#7C7C7C"
       android:textSize="9.5sp"
@@ -215,11 +224,12 @@
   <Button
       android:layout_width="55dp"
       android:layout_height="90dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="5dp"
       android:backgroundTint="@color/primary"
       android:fontFamily="@font/nunitoreguler"
       android:paddingStart="5dp"
       android:paddingEnd="5dp"
-      android:layout_marginLeft="10dp"
       android:text="@string/senin"
       android:textColor="#7C7C7C"
       android:textSize="9.5sp"
@@ -228,89 +238,90 @@
 
  </LinearLayout>
 
-
  <TextView
-     android:id="@+id/textView14"
+     android:id="@+id/tv_selectTime"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:layout_marginBottom="120dp"
      android:fontFamily="@font/nuntobold"
      android:text="Pilih Waktu"
+     android:layout_marginTop="10dp"
+     android:layout_marginStart="20dp"
+     app:layout_constraintTop_toBottomOf="@id/LayoutHari"
+     app:layout_constraintStart_toStartOf="parent"
      android:textColor="@color/black"
      android:textSize="14sp"
      app:layout_constraintBottom_toBottomOf="parent"
      tools:layout_editor_absoluteX="16dp" />
 
- <Button
-     android:layout_width="55dp"
-     android:layout_height="40dp"
-     android:backgroundTint="@color/primary"
-     android:textColor="#7C7C7C"
-     android:fontFamily="@font/nunitoreguler"
-     android:paddingStart="5dp"
-     android:paddingEnd="5dp"
-     android:text="11:00"
-     android:layout_marginRight="12dp"
-     android:textSize="9.5sp"
-     tools:layout_editor_absoluteX="17dp"
-     tools:layout_editor_absoluteY="624dp"></Button>
+ <LinearLayout
+     android:id="@+id/LayoutJam"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="68dp"
+     android:orientation="horizontal"
+     app:layout_constraintBottom_toBottomOf="parent"
+     tools:layout_editor_absoluteX="2dp">
+
+  <Button
+      android:layout_width="55dp"
+      android:layout_height="40dp"
+      android:layout_marginLeft="10dp"
+      android:backgroundTint="@color/primary"
+      android:fontFamily="@font/nunitoreguler"
+      android:paddingStart="5dp"
+      android:paddingEnd="5dp"
+      android:text="11.00"
+      android:textColor="#7C7C7C"
+      android:textSize="9.5sp"
+      tools:layout_editor_absoluteX="16dp"
+      tools:layout_editor_absoluteY="487dp" />
+
+  <Button
+      android:layout_width="55dp"
+      android:layout_height="40dp"
+      android:layout_marginLeft="15dp"
+      android:backgroundTint="@color/primary"
+      android:fontFamily="@font/nunitoreguler"
+      android:paddingStart="5dp"
+      android:paddingEnd="5dp"
+      android:text="12.00"
+      android:textColor="#7C7C7C"
+      android:textSize="9.5sp"
+      tools:layout_editor_absoluteX="16dp"
+      tools:layout_editor_absoluteY="487dp" />
+
+  <Button
+      android:layout_width="55dp"
+      android:layout_height="40dp"
+      android:layout_marginLeft="15dp"
+      android:fontFamily="@font/nunitoreguler"
+      android:paddingStart="5dp"
+      android:paddingEnd="5dp"
+      android:text="13.00"
+      android:textSize="9.5sp"
+      tools:layout_editor_absoluteX="210dp"
+      tools:layout_editor_absoluteY="496dp" />
+
+  <Button
+      android:layout_width="55dp"
+      android:layout_height="40dp"
+      android:layout_marginLeft="15dp"
+      android:backgroundTint="@color/primary"
+      android:fontFamily="@font/nunitoreguler"
+      android:paddingStart="5dp"
+      android:paddingEnd="5dp"
+      android:text="14.00"
+      android:textColor="#7C7C7C"
+      android:textSize="9.5sp"
+      tools:layout_editor_absoluteX="16dp"
+      tools:layout_editor_absoluteY="487dp" />
+
+
+ </LinearLayout>
 
  <Button
-     android:layout_width="55dp"
-     android:layout_height="40dp"
-     android:backgroundTint="@color/primary"
-     android:textColor="#7C7C7C"
-     android:fontFamily="@font/nunitoreguler"
-     android:paddingStart="5dp"
-     android:paddingEnd="5dp"
-     android:layout_marginRight="12dp"
-     android:text="12:00"
-     android:textSize="9.5sp"
-     tools:layout_editor_absoluteX="91dp"
-     tools:layout_editor_absoluteY="624dp"></Button>
-
- <Button
-     android:layout_width="55dp"
-     android:layout_height="40dp"
-     android:backgroundTint="@color/primary"
-     android:textColor="#7C7C7C"
-     android:fontFamily="@font/nunitoreguler"
-     android:paddingStart="5dp"
-     android:layout_marginRight="12dp"
-     android:paddingEnd="5dp"
-     android:text="13:00"
-     android:textSize="9.5sp"
-     tools:layout_editor_absoluteX="169dp"
-     tools:layout_editor_absoluteY="624dp"></Button>
-
- <Button
-     android:layout_width="55dp"
-     android:layout_height="40dp"
-     android:backgroundTint="@color/pink"
-     android:fontFamily="@font/nunitoreguler"
-     android:paddingStart="5dp"
-     android:layout_marginRight="12dp"
-     android:paddingEnd="5dp"
-     android:text="14:00"
-     android:textSize="9.5sp"
-     tools:layout_editor_absoluteX="245dp"
-     tools:layout_editor_absoluteY="624dp"></Button>
-
- <Button
-     android:layout_width="55dp"
-     android:layout_height="40dp"
-     android:backgroundTint="@color/primary"
-     android:fontFamily="@font/nunitoreguler"
-     android:paddingStart="5dp"
-     android:layout_marginRight="12dp"
-     android:paddingEnd="5dp"
-     android:text="15:00"
-     android:textColor="#7C7C7C"
-     android:textSize="9.5sp"
-     tools:layout_editor_absoluteX="319dp"
-     tools:layout_editor_absoluteY="624dp"></Button>
-
- <Button
+     android:id="@+id/btn_Jadwal"
      android:layout_width="145dp"
      android:layout_height="47dp"
      android:backgroundTint="@color/pink"
@@ -318,8 +329,10 @@
      android:paddingStart="5dp"
      android:paddingEnd="5dp"
      android:text="Pilih Jadwal"
+     android:layout_marginTop="10dp"
      android:textSize="12sp"
      app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/LayoutJam"
      app:layout_constraintStart_toStartOf="parent"
      tools:layout_editor_absoluteY="677dp"></Button>
 </androidx.constraintlayout.widget.ConstraintLayout>

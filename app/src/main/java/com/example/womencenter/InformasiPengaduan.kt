@@ -21,7 +21,7 @@ class InformasiPengaduan : AppCompatActivity() {
         val btnback: Button = findViewById(R.id.btn_back)
         btnback.setOnClickListener {
             // Tambahkan logika yang ingin Anda jalankan saat tombol ditekan di sini
-            val bb = Intent(this@InformasiPengaduan, HomeActivity::class.java)
+            val bb = Intent(this@InformasiPengaduan, MainActivity::class.java)
             startActivity(bb)
         }
     }

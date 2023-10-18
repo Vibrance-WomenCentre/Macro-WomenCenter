@@ -14,7 +14,7 @@ class PembayaranBerhasil : AppCompatActivity() {
         val btnGoToHome = findViewById<Button>(R.id.btn_goToHome)
         btnGoToHome.setOnClickListener {
             // Tambahkan kode untuk mengarahkan pengguna ke beranda aplikasi
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
