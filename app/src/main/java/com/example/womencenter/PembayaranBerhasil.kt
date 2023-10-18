@@ -9,6 +9,7 @@ class PembayaranBerhasil : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pembayaran_berhasil)
+        supportActionBar?.hide()
 
         val btnGoToHome = findViewById<Button>(R.id.btn_goToHome)
         btnGoToHome.setOnClickListener {
@@ -16,6 +17,8 @@ class PembayaranBerhasil : AppCompatActivity() {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 }
 

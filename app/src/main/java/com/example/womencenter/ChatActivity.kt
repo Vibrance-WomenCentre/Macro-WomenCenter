@@ -45,7 +45,6 @@ class ChatActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
-
     private fun sendMessage() {
         val messageText = messageInput.text.toString().trim()
         if (messageText.isNotEmpty()) {

@@ -72,9 +72,14 @@ class MetodePembayaran : AppCompatActivity() {
                 miniMarketSpinner.visibility = View.GONE
             }
         }
-        val btnImplicit: Button = findViewById(R.id.continuePaymentButton)
-        btnImplicit.setOnClickListener {
+        val btnpayment: Button = findViewById(R.id.continuePaymentButton)
+        btnpayment.setOnClickListener {
             startActivity(Intent(this@MetodePembayaran, KonfirmasiBayar::class.java))
+
+        }
+        val btnback: Button = findViewById(R.id.btn_back)
+        btnback.setOnClickListener {
+            startActivity(Intent(this@MetodePembayaran, Profile_Consult::class.java))
 
         }
     }
