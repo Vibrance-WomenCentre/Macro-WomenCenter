@@ -17,7 +17,7 @@ class Call : AppCompatActivity() {
         val btncallend: ImageButton = findViewById(R.id.callBatalButton)
         btncallend.setOnClickListener {
             // Tambahkan logika yang ingin Anda jalankan saat tombol ditekan di sini
-            val bb = Intent(this@Call, ChatActivity::class.java)
+            val bb = Intent(this@Call, AfterBayar::class.java)
             startActivity(bb)
         }
     }

@@ -119,13 +119,13 @@
         android:id="@+id/totalPriceButton"
         android:layout_width="220dp"
         android:layout_height="69dp"
-        android:layout_marginTop="624dp"
-        android:text="Total Harga              Rp 50.000"
+        android:layout_marginTop="572dp"
+        android:text="@string/total_harga"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 
     <Button
         android:id="@+id/continuePaymentButton"

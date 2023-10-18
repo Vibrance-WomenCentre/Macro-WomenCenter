@@ -58,13 +58,10 @@
         android:textSize="12sp"
         android:fontFamily="@font/nunitoreguler"
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintTop_toBottomOf="@id/textView8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageVera"
-        app:layout_constraintVertical_bias="0.756"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="190dp"/>
 
     <!-- Tombol Speaker -->
     <!-- Ganti dengan sumber daya gambar sesuai kebutuhan -->
