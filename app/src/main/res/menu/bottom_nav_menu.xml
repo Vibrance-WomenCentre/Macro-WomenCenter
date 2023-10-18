@@ -12,9 +12,9 @@
         android:title="Favorite" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_edukasi"
         android:icon="@drawable/baseline_dashboard_24"
-        android:title="Dashboard" />
+        android:title="Edukasi" />
 
     <item
         android:id="@+id/navigation_profile"
