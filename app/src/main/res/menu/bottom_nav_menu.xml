@@ -12,6 +12,10 @@
         android:title="Favorite" />
 
     <item
+        android:title=""
+        android:enabled="true"/>
+
+    <item
         android:id="@+id/navigation_edukasi"
         android:icon="@drawable/baseline_dashboard_24"
         android:title="Edukasi" />
