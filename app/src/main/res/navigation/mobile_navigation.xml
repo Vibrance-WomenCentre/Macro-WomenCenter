@@ -18,10 +18,10 @@
         tools:layout="@layout/fragment_favorite" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.womencenter.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_edukasi"
+        android:name="com.example.womencenter.EduFragment"
+        android:label="@string/title_edukasi"
+        tools:layout="@layout/fragment_edu" />
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.womencenter.ui.Profile.ProfileFragment"
